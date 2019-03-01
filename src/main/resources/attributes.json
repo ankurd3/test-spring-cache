@@ -1,0 +1,260 @@
+{
+  "name": "ENCOUNTERS",
+  "type": "COMP_NOTE",
+  "sections": [{
+    "type": "PHYSICAL_EXAM",
+    "attributes": [{
+      "name": "apperance",
+      "type": "boolean",
+      "sort": 1,
+      "copyfromprevious": "No",
+      "normal": "Yes"
+    },
+      {
+        "name": "apperance_comment",
+        "type": "text",
+        "sort": 1,
+        "copyfromprevious": "No"
+
+      },
+      {
+        "name": "access",
+        "type": "boolean",
+        "sort": 4,
+        "copyfromprevious": "No",
+        "normal": "Yes"
+      },
+      {
+        "name": "access_comment",
+        "type": "text",
+        "sort": 4,
+        "copyfromprevious": "No"
+
+      },
+      {
+        "name": "pulmonary",
+        "type": "boolean",
+        "sort": 4,
+        "copyfromprevious": "No",
+        "normal": "Yes"
+      },
+      {
+        "name": "pulmonary_comment",
+        "type": "text",
+        "sort": 4,
+        "copyfromprevious": "No"
+
+      },
+      {
+        "name": "cardoivascular",
+        "type": "boolean",
+        "sort": 4,
+        "copyfromprevious": "No",
+        "normal": "Yes"
+      },
+      {
+        "name": "cardoivascular_comment",
+        "type": "text",
+        "sort": 4,
+        "copyfromprevious": "No",
+        "normal": "Yes"
+      },
+      {
+        "name": "extremities",
+        "type": "boolean",
+        "sort": 4,
+        "copyfromprevious": "No",
+        "normal": "Yes"
+      },
+      {
+        "name": "extremities_comment",
+        "type": "text",
+        "sort": 6,
+        "copyfromprevious": "Yes"
+      }
+    ]
+  },
+    {
+      "type": "FLUID_BP",
+      "attributes": [{
+        "name": "blood_pressure",
+        "type": "restricated_text",
+        "displayvalues": [
+          "Controlled",
+          "Low",
+          "High"
+        ],
+        "copyfrom": "Yes",
+        "normal": "Controlled"
+      },
+        {
+          "name": "acceptable_idwg",
+          "type": "boolean",
+          "sort": 1,
+          "normal": "yes"
+        },
+        {
+          "name": "achieving_target_weight",
+          "type": "boolean",
+          "sort": 3,
+          "normal": "yes"
+        },
+        {
+          "name": "bp_fluid_comment",
+          "type": "text",
+          "sort": 3
+        }
+      ]
+    },
+    {
+      "type": "ANEMIA",
+      "attributes": [{
+        "name": "hb_value",
+        "type": "restricated_text",
+        "displayvalues": [
+          "InTarget",
+          "Above",
+          "Below"
+        ],
+        "copyfrom": "Yes",
+        "normal": "Below"
+      },
+        {
+          "name": "t_sat",
+          "type": "restricated_text",
+          "displayvalues": [
+            "Normal",
+            "High",
+            "Below"
+          ],
+          "copyfrom": "Yes",
+          "normal": "Below"
+        },
+        {
+          "name": "ferritin",
+          "type": "restricated_text",
+          "displayvalues": [
+            "InTarget",
+            "Above",
+            "Below"
+          ],
+          "copyfrom": "Yes",
+          "normal": "Above"
+        },
+        {
+          "name": "anemia_comment",
+          "type": "text",
+          "sort": 3
+        }
+      ]
+    },
+    {
+      "type": "NUTRITION",
+      "attributes": [{
+        "name": "alb",
+        "type": "restricated_text",
+        "displayvalues": [
+          "InTarget",
+          "Below"
+        ],
+        "copyfrom": "Yes",
+        "normal": "Below"
+      },
+        {
+          "name": "k",
+          "type": "restricated_text",
+          "displayvalues": [
+            "InTarget",
+            "Above",
+            "Below"
+          ],
+          "copyfrom": "Yes",
+          "normal": "Below"
+        },
+        {
+          "name": "status",
+          "type": "restricated_text",
+          "displayvalues": [
+            "Optimal",
+            "Adequate",
+            "Sub-Opt"
+          ],
+          "copyfrom": "Yes",
+          "normal": "Above"
+        },
+        {
+          "name": "nutrition_comment",
+          "type": "text",
+          "sort": 3
+        }
+      ]
+    },
+    {
+      "type": "BONE_MINERAL_DISORDER",
+      "attributes": [{
+        "name": "phos",
+        "type": "restricated_text",
+        "displayvalues": [
+          "InTarget",
+          "Above",
+          "Below"
+        ],
+        "copyfrom": "Yes",
+        "normal": "Below"
+      },
+        {
+          "name": "corca",
+          "type": "restricated_text",
+          "displayvalues": [
+            "InTarget",
+            "Above",
+            "Below"
+          ],
+          "copyfrom": "Yes",
+          "normal": "Below"
+        },
+        {
+          "name": "pth",
+          "type": "restricated_text",
+          "displayvalues": [
+            "InTarget",
+            "Above",
+            "Below"
+          ],
+          "copyfrom": "Yes",
+          "normal": "Above"
+        },
+        {
+          "name": "bone_mineral_disorder_comment",
+          "type": "text",
+          "sort": 3
+        }
+      ]
+    },
+    {
+      "type": "TRANSPLANT_STATUS",
+      "attributes": [{
+        "name": "patient_transplant_status",
+        "type": "restricated_text",
+        "displayvalues": [
+          "Active",
+          "InActive"
+        ],
+        "copyfrom": "Yes",
+        "normal": "Below"
+      },
+        {
+          "name": "patient_transplant_candidate",
+          "type": "boolean",
+          "copyfrom": "Yes"
+
+        },
+        {
+          "name": "transplant_status_comment",
+          "type": "text",
+          "sort": 3
+        }
+      ]
+    }
+  ]
+}
